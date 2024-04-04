@@ -1,7 +1,5 @@
+import data from '../../data'
 import styled from 'styled-components'
-import DarkImage from './../../imgs/image-about-dark.jpg';
-import LightImage from './../../imgs/image-about-light.jpg';
-
 
 const CardWrapper = styled.div`
   display: flex;
@@ -12,7 +10,7 @@ const CardWrapper = styled.div`
   }
 `;
 
-const Image = styled.img`
+const Image = styled.img`  
   width: 100%;
   height: 25vh;
   object-fit: cover;
@@ -28,7 +26,6 @@ const Image = styled.img`
   }
 
   @media only screen and (min-width: 768px) {
-
     width: 30%;
 
     &:first-child {
@@ -37,6 +34,9 @@ const Image = styled.img`
 
   }
 
+  @media only screen and (max-height: 680px) {
+    height: 60vh;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -50,6 +50,10 @@ const TextWrapper = styled.div`
   @media only screen and (min-width: 550px) {
     height: 40vh;
     padding: 0 1rem;
+  }
+
+  @media only screen and (max-height: 680px) {
+    height: 60vh;
   }
 
   @media only screen and (min-width: 1024px) {
@@ -78,26 +82,17 @@ const Description = styled.p`
     }
 `;
 
-
-
-
-
 const AboutCard = () => {
   return (
     <CardWrapper>
-      <Image src={DarkImage} alt="3d image of a sofisticated room, with circular center wood table and an armchair in black linen fabric with inox thin circular arms" />
+      <Image src={data.about.imgDarkSrc} alt="" />
       <TextWrapper>
-        <Title>ABOUT OUR FURNITURE</Title>
+        <Title>{data.about.title}</Title>
         <Description>
-          Our multifunctional collection blends design and function to suit your
-          individual taste. Make each room unique, or pick a cohesive theme that
-          best express your interests and what inspires you. Find the furniture
-          pieces you need, from traditional to contemporary styles or anything
-          in between. Product specialists are available to help you create your
-          dream space.
+          {data.about.description}
         </Description>
       </TextWrapper>
-      <Image src={LightImage} alt="" />
+      <Image src={data.about.imgLightSrc} alt="" />
     </CardWrapper>
   );
 };

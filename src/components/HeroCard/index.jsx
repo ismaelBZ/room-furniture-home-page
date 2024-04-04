@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Image from './../../imgs/desktop-image-hero-1.jpg';
+import data from './../../data';
 // 
 const CardWrapper = styled.div`
   display: flex;
@@ -19,6 +19,10 @@ const ImageHero = styled.img`
   @media only screen and (min-width: 550px) {
     width: 50%;
     height: 60vh;
+  }
+  
+  @media only screen and (max-height: 680px) {
+    height: 80vh;
   }
 
 `;
@@ -41,8 +45,12 @@ const TextWrapper = styled.div`
     padding: 0 2rem;
   }
 
+  @media only screen and (max-height: 680px) {
+    height: 80vh;
+  }
+
   @media only screen and (min-width: 1024px) {
-    max-width: 570px;
+    max-width: 480px;
     justify-content: space-between;
     padding: 5%;
   }
@@ -65,6 +73,10 @@ const ShopLink = styled.a`
   letter-spacing: 10px;
   text-decoration: none;
   color: #131313;
+  
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 47px;
+  }
 `;
 
 const Arrow = styled.svg`
@@ -72,22 +84,18 @@ const Arrow = styled.svg`
   transform: scaleX(1.2) scaleY(1);
 `;
 
-const HeroCard = () => {
+const HeroCard = ({index}) => {
   return (
     <>
       <CardWrapper>
         <ImageHero
-          src={Image}
-          alt="High quality furniture in wood and white lacquer paint"
+          src={data.hero[index].imgSrc}
+          alt={data.hero[index].alt}
         />
         <TextWrapper>
-          <Title>Discover innovative ways to decorate</Title>
+          <Title>{data.hero[index].title}</Title>
           <Description>
-            We provide unmatched quality, comfort, and style for property owners
-            across the country. Our experts combine form and function in
-            bringing your vision to life. Create a room in your own style with
-            our collection and make your property a reflection of you and what
-            you love.
+            {data.hero[index].description}
           </Description>
           <ShopLink href="#" target="_blank">
             SHOP NOW <Arrow width="40" height="12" xmlns="http://www.w3.org/2000/svg">
