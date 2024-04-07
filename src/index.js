@@ -1,6 +1,6 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, HashRouter as Router } from 'react-router-dom';
 import Home from './pages/Home';
 
 const browserRouter = createBrowserRouter([
@@ -13,7 +13,9 @@ const browserRouter = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={browserRouter} />
+    <Router>
+      <RouterProvider router={browserRouter} />
+    </Router>
   </React.StrictMode>
 );
 
