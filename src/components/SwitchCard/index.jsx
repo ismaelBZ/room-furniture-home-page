@@ -4,25 +4,34 @@ import Right from './../../imgs/icon-angle-right.svg';
 
 const Wrapper = styled.div`
   position: absolute;
-  bottom: 40vh;
-  right: 30%;
+  bottom: 40dvh;
+  right: 30svw; //30%
 
   @media only screen and (max-width: 768px) {
     right: 50%;
   }
 
   @media only screen and (max-width: 550px) {
-    bottom: 60vh;
+    bottom: 60svh;
     right: 0;
   }
 
   @media only screen and (max-height: 680px) {
-    bottom: 20vh;
+    bottom: 20svh;
   }
  
   @media only screen and (max-height: 680px) and (min-width: 1200px) {
-    bottom: 60vh
+    bottom: 60svh
   } 
+
+  @media only screen and (max-height: 460px) {
+    bottom: 0;
+  }
+  
+  @media only screen and (max-height: 460px) and (min-width: 1200px) {
+    bottom: 10svh;
+  }
+
   `;
 
 const PreviousCard = styled.button`
@@ -36,6 +45,15 @@ const PreviousCard = styled.button`
   &:hover,
   &:active {
     background-color: #444;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 15vw;
+  }
+  
+  @media only screen and (max-height: 360px) and (max-width: 830px) {
+    padding: 10px;
+    width: 7vw;
   }
 `;
 

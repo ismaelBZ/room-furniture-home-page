@@ -25,6 +25,9 @@ const ImageHero = styled.img`
     height: 80vh;
   }
 
+  @media only screen and (max-height: 460px){
+    height: 100vh;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -53,6 +56,9 @@ const TextWrapper = styled.div`
     max-width: 480px;
     justify-content: space-between;
     padding: 5%;
+  }
+  @media only screen and (max-height: 460px) {
+    height: 100vh;
   }
 `;
 

@@ -37,6 +37,11 @@ const Image = styled.img`
   @media only screen and (max-height: 680px) {
     height: 60vh;
   }
+
+  @media only screen and (max-height: 460px) {
+    height: 100vh;
+  }
+
 `;
 
 const TextWrapper = styled.div`
@@ -64,6 +69,10 @@ const TextWrapper = styled.div`
     max-width: 575px;
   }
   
+  @media only screen and (max-height: 460px) {
+    height: 100vh;
+  }
+
 `;
 
 const Title = styled.h2`
