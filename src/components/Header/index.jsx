@@ -15,8 +15,11 @@ const HeaderWrapper = styled.header`
     width: 50%;
   }
   @media only screen and (min-width: 768px) {
-    max-width: 500px;
+    width: 90%;
     justify-content: space-evenly;
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 78%;
   }
 `;
 
@@ -39,6 +42,10 @@ const NavWrapper = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+
+  @media only screen and (min-width: 550px) {
+    width: 100vw;
+  }
 
   @media only screen and (min-width: 768px) {
     height: auto;
@@ -63,6 +70,10 @@ const CloseBtn = styled.button`
 const Nav = styled.nav`
   display: flex;
   background: white;
+
+  @media only screen and (min-width: 550px) {
+    width: 50%;
+  }
 
   @media only screen and (min-width: 768px) {
     background-color: transparent;
@@ -103,15 +114,15 @@ const Header = () => {
   let [isShowing, setIsShowing] = useState(false);
 
   useEffect(() => {
+    window.addEventListener('load', handleDesktopMenu);
     window.addEventListener('resize', handleDesktopMenu);
-    window.addEventListener('click', () => console.log('clickou'));
-    // window.addEventListener('click', (e) => {
-    //   const targetName = `${e.target.className}`;
-    //   if (targetName.includes(NavWrapper.componentStyle.componentId)){
-    //     setDisplay(false);
-    //     setIsShowing(false);
-    //   }
-    // })
+    window.addEventListener('click', (e) => {
+      const targetName = `${e.target.className}`;
+      if (targetName.includes(NavWrapper.componentStyle.componentId)){
+        setDisplay(false);
+        setIsShowing(false);
+      }
+    })
   }, []);
   
   useEffect(() => {

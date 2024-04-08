@@ -19,6 +19,10 @@ const Wrapper = styled.div`
   @media only screen and (max-height: 680px) {
     bottom: 20vh;
   }
+ 
+  @media only screen and (max-height: 680px) and (min-width: 1200px) {
+    bottom: 60vh
+  } 
   `;
 
 const PreviousCard = styled.button`
