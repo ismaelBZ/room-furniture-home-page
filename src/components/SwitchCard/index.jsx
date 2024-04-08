@@ -26,10 +26,11 @@ const Wrapper = styled.div`
 
   @media only screen and (max-height: 460px) {
     bottom: 0;
+    right: 50%;
   }
   
   @media only screen and (max-height: 460px) and (min-width: 1200px) {
-    bottom: 10svh;
+    bottom: 100vh;
   }
 
   `;
