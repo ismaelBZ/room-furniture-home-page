@@ -12,7 +12,7 @@ const CardWrapper = styled.div`
 
 const ImageHero = styled.img`
   width: 100%;
-  height: 40vh;
+  height: 40svh;
   object-fit: cover;
   object-position: 40% top;
 
