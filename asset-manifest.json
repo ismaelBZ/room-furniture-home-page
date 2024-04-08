@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/room-furniture-home-page/static/css/main.0b9eb6e1.css",
-    "main.js": "/room-furniture-home-page/static/js/main.6910a50d.js",
+    "main.js": "/room-furniture-home-page/static/js/main.bfb5d2cb.js",
     "static/media/desktop-image-hero-1.jpg": "/room-furniture-home-page/static/media/desktop-image-hero-1.91901d0d47ea68db9434.jpg",
     "static/media/desktop-image-hero-3.jpg": "/room-furniture-home-page/static/media/desktop-image-hero-3.05fd679aa0d31e01c176.jpg",
     "static/media/desktop-image-hero-2.jpg": "/room-furniture-home-page/static/media/desktop-image-hero-2.9d35405672f4fca67945.jpg",
@@ -12,10 +12,10 @@
     "static/media/icon-angle-left.svg": "/room-furniture-home-page/static/media/icon-angle-left.d53877dfd9c6774a68749ad0239b4ce1.svg",
     "static/media/icon-angle-right.svg": "/room-furniture-home-page/static/media/icon-angle-right.0ed3f81fbd14b3bd61d875b7df144e4c.svg",
     "main.0b9eb6e1.css.map": "/room-furniture-home-page/static/css/main.0b9eb6e1.css.map",
-    "main.6910a50d.js.map": "/room-furniture-home-page/static/js/main.6910a50d.js.map"
+    "main.bfb5d2cb.js.map": "/room-furniture-home-page/static/js/main.bfb5d2cb.js.map"
   },
   "entrypoints": [
     "static/css/main.0b9eb6e1.css",
-    "static/js/main.6910a50d.js"
+    "static/js/main.bfb5d2cb.js"
   ]
 }
