@@ -5,7 +5,7 @@ import Right from './../../imgs/icon-angle-right.svg';
 const Wrapper = styled.div`
   position: absolute;
   bottom: 40dvh;
-  right: 30svw; //30%
+  right: 30%;
 
   @media only screen and (max-width: 768px) {
     right: 50%;
